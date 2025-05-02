@@ -1,0 +1,4 @@
+make a dino game jump over stuff by pressing " " and duck by pressing arrow down
+hw 
+Google, understand and explain in 1 sentence, what position in CSS means.
+Explain each position in 1 sentence.
