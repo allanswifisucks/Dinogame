@@ -62,8 +62,28 @@ align-items: center;
     border: 2px solid yellow;
 }
 .dino{
-    width: 100px;
-    height: 90px;
+    width: 80px;
+    height: 70px;
     bottom:0;
     position:absolute;
+}
+/* Jump animation */
+@keyframes jump {
+    0%   { bottom: 0; }
+    50%  { bottom: 250px; }
+    60%  {bottom: 250px} /* Jump up 100px high */
+    70%  {bottom: 250}
+    100% { bottom: 0; }     /* Come back down */
+  }
+  
+  /* When we add .jump, it runs the jump animation */
+  .dino.jump {
+    animation: jump 0.5s ease-out; /* 0.5 seconds up-and-down */
+  }
+.obstacle{
+    position: absolute;
+    bottom:0;
+    width:15px;
+    height:80px;
+    background: red;
 }
