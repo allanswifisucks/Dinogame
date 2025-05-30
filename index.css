@@ -59,13 +59,15 @@ align-items: center;
    
 }
 .dinocointext{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    color: black;
 }
 .dino{
     width: 80px;
     height: 70px;
     bottom:0;
     position:absolute;
+    margin-left: 10px;
 }
 /* Jump animation */
 @keyframes jump {
@@ -86,4 +88,11 @@ align-items: center;
     width:15px;
     height:80px;
     background: red;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
