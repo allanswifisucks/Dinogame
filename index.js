@@ -31,7 +31,13 @@ document.addEventListener('keydown', function(e) {
     }
   });
   function endGame(){
-    alert('Game Over!');
+    // alert('Game Over!');
+  clearInterval(gameTimer);   // Stop moving obstacles
+  clearInterval(spawnTimer);  // Stop creating obstacles
+  document.getElementById("youlose").textContent = "you lose!";
+  window.location.reload();   // Restart the game
+
+
   }
   function detectlose(){
     var dinoRect = dino.getBoundingClientRect();   // invisible box around dino
